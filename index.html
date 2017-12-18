@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111378506-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-111378506-1');
+	</script>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Colectivo Sin Serif | Aprende Serigrafía</title>
@@ -31,20 +41,21 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<h1><a href="#">
-					<img class="img-responsive ss-logo1" src="assets/img/ss-logo.svg" alt="Logo Reducido Colectivo Sin Serif">
-					<img class="img-responsive ss-logo2 hidden" src="assets/img/sinserif-logo.svg" alt="Logo Reducido Colectivo Sin Serif">
-				</a></h1>
+				<h1>
+					<a href="#">
+						<img class="img-responsive ss-logo1" src="assets/img/ss-logo.svg" alt="Logo Reducido Colectivo Sin Serif">
+						<img class="img-responsive ss-logo2 hidden" src="assets/img/sinserif-logo.svg" alt="Logo Colectivo Sin Serif">
+					</a>
+				</h1>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav navbar-right">
 		        <li class="active"><a href="#home">Inicio</a></li>
-		        <li><a href="#nosotros">Nosotros</a></li>
-		        <li><a href="#proyecto">El Proyecto</a></li>
-		        <li><a href="#empieza">Empieza a Serigrafiar</a></li>
-		        <li><a href="#contacto">Contacto</a></li>
+		        <li><a href="us.html">Nosotros y El Proyecto</a></li>
+		        <li><a href="start.html">Empieza a Serigrafiar</a></li>
+		        <li><a href="#contact">Contacto</a></li>
 		      </ul>
 		    </div>
 		</div>
@@ -78,11 +89,12 @@
 		</div>
 	</header>
 	<!-- END SLIDER -->
+	<!-- MAIN -->
 	<main>
 		<div class="container-fluid intro">
 			<div class="row">
 				<div class="hidden-xs hidden-sm col-md-2 col-md-offset-10">
-					<a href="#button-empieza">
+					<a href="#start">
 						<img class="img-responsive drop" src="assets/img/drop.png">
 					</a>
 				</div>
@@ -93,11 +105,11 @@
 		</div>
 		<div class="container-fluid intro-1">
 			<div class="row">	
-				<div class="col-xs-12 col-md-6 text-center">
+				<div class="col-xs-12 col-md-6 text-center intro-1col">
 					<h3><strong>¿Qué Aprenderás?</strong></h3>
 					<p>Los elementos necesarios, insumos, materiales, procedimientos y cuidados para que puedas comenzar a realizar tus impresiones en serigrafía usando telas (poleras, polerones, trozos de tela, etc.) y le des el uso que estimes conveniente. Siempre es bueno aprender cosas nuevas, más si ya tienes un interés previo.</p>
 				</div>
-				<div class="col-xs-12 col-md-6 text-center">
+				<div class="col-xs-12 col-md-6 text-center intro-1col">
 					<h3><strong>Clima y Tintas</strong></h3>
 					<p>Antes de empezar, y como dato previo, las tintas que usaremos para ejemplificar y llevar a cabo las impresiones son en base a agua (hay otras tintas que tienen como base otros elementos, como tintas al óleo o PVC). Una de las tantas características de estas tintas, es que rinden más a ciertas temperaturas.</p>
 				</div>
@@ -125,13 +137,12 @@
 						</tr>
 					</table>
 				</div>
-				<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+				<div class="col-xs-12 col-md-8 col-md-offset-2 text-center intro-2">
 					<h3><strong>Revisa el clima actual en donde estés</strong></h3>
 				</div>
-				<div class="container-fluid">
+				<div class="container-fluid intro-3">
 					<div class="row">
-						<div id="map" class="col-xs-12 col-md-6"></div>
-						<div class="col-xs-12 col-md-6 text-center">
+						<div class="col-xs-12 col-md-4 col-md-offset-1 text-center">
 							<div class="form-group">
 								<select class="form-control select">
 									<option>Selecciona una ubicación</option>
@@ -152,14 +163,63 @@
 									<option value="ptaar">Punta Arenas, Región de Magallanes</option>
 								</select>
 							</div>
-							<h3 class="text-center summary"></h3>
-							<img src="" class="img-responsive center-block img-weather">
+							<h4 class="text-center summary"></h4>
+							<img src="assets/img/weather/thermometer.png" class="img-responsive center-block img-weather">
+						</div>
+						<div id="map" class="col-xs-12 col-md-6"></div>
+						<div class="col-xs-12 col-md-8 col-md-offset-2 text-center intro-4">
+							<p>
+								<strong>
+									Anímate y comienza a seguir el manual. 
+								</strong>
+							</p>
+							<span id="start"></span>
+							<button class="btn button-start">
+								<a href="start.html">
+									¡A EMPEZAR!
+								</a>
+							</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="container-fluid" id="contact">
+			<div class="row">
+				<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+					<p>
+						¿Quieres contarnos tu experiencia?, ¿Necesitas ayuda en algún tema?, ¿Crees que nos faltó algo?. ¡Cuéntanos!.
+					</p>
+					<form>
+						<div class="col-xs-12 col-sm-6 col-sm-offset-3 form-group contact-form">
+							<label>Nombre y Apellido</label>
+							<input type="text" class="form-control" required>
+							<label>Email</label>
+							<input type="text" class="form-control" required>
+							<label>Mensaje</label>
+							<textarea class="form-control"></textarea>
+							<button type="submit" class="btn center-block">ENVIAR</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer class="container-fluid">
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-4">
+					<h1>
+						<a href="#home">
+							<img class="img-responsive logo-footer" src="assets/img/sinserif-logo.svg" alt="Logo Colectivo Sin Serif">
+						</a>
+					</h1>
+					<p class="text-center">
+						2017
+					</p>
+				</div>
+			</div>
+		</footer>
 	</main>
+	<!-- END MAIN -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsO2qJ9mNbwzKXy2m6BQ8ogIkuYLgZZoU&callback=initMap"
 	 async defer></script>
 	<script type="text/javascript" src="assets/js/api.js"></script>

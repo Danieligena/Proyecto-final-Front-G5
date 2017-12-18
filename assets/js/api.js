@@ -1,4 +1,3 @@
-
   	/* API CLIMA + MAPS */
 
   	var url = 'https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/';
@@ -69,16 +68,16 @@
 		},
 	}
 	var img = {
-		'clear-day': '../img/weather/clearday.png',
-		'clear-night': '../img/weather/clearnight.png',
-		'rain': '../img/weather/rain.png',
-		'snow': '../img/weather/snow.png',
-		'sleet': '../img/weather/wind.png',
-		'wind':'../img/weather/wind.png',
-		'fog': '../img/weather/fog.png',
-		'cloudy': '../img/weather/cloudy.png',
-		'partly-cloudy-day': '../img/weather/partlycloudyday.png',
-		'partly-cloudy-night': '../img/weather/partlycloudynight.png'
+		'clear-day': 'assets/img/weather/clearday.png',
+		'clear-night': 'assets/img/weather/clearnight.png',
+		'rain': 'assets/img/weather/rain.png',
+		'snow': 'assets/img/weather/snow.png',
+		'sleet': 'assets/img/weather/wind.png',
+		'wind':'assets/img/weather/wind.png',
+		'fog': 'assets/img/weather/fog.png',
+		'cloudy': 'assets/img/weather/cloudy.png',
+		'partly-cloudy-day': 'assets/img/weather/partlycloudyday.png',
+		'partly-cloudy-night': 'assets/img/weather/partlycloudynight.png'
 	}
 
 	//Google Maps
@@ -99,13 +98,9 @@
     //Dark Sky + Google Maps
 	$('.select').on('change', function (){
 		var coordenadas = coords[$(this).val()]
-		//centra el nuevo mapa en --> nuevo mapa + coordenadas
 		map.setCenter(new google.maps.LatLng(coordenadas));
-		//entrega nuevo zoom al mapa nuevo
 		map.setZoom(13);
-		//elimina el marcador anterior
 		marker.setMap();
-		//entrega un nuevo marcador con las coordenadas nuevas
 		marker = new google.maps.Marker({
 			position: coordenadas,
 			map: map
@@ -114,7 +109,7 @@
 			url: url + key + coords[$(this).val()].lat + ',' + coords[$(this).val()].lng + '?' + queryParams[0] + '&' + queryParams[1] + '&' + queryParams[2],
 			method: 'GET',
 			}).then(function (data) {
-				resumen.text(parseInt((data.currently.temperature)) + '° ' + (data.currently.summary));
+				resumen.html('<h3>Temperatura Actual:</h3><br>' + parseInt((data.currently.temperature)) + '° - ' + (data.currently.summary));
 				imagen.attr('src', img[data.currently.icon]);
 			})
 	})
