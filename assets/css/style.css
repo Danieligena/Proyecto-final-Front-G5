@@ -1,7 +1,9 @@
+/* ---------- ALL ---------- */
+
 body {
 	box-sizing: border-box;
 	font-family: 'Encode Sans', sans-serif;
-	color: #210E4C
+	color: #210E4C;
 }
 
 /* --- MOBILE FIRST --- */
@@ -57,8 +59,10 @@ nav.navbar {
 .navbar-default .navbar-nav>.active>a:visited {
 	font-weight: 800;
 	background-color: #88F2B8;
-	color: #210E4C
+	color: #210E4C;
 }
+
+/* ---------- HOME ---------- */
 
 /* SLIDER */
 
@@ -92,7 +96,7 @@ nav.navbar {
 	font-size: 30px;
 }
 
-/* HOME - INTRO */
+/* MAIN */
 
 .intro {
 	background-color: #5C339E;
@@ -121,6 +125,10 @@ nav.navbar {
 	font-size: 1.2em;
 }
 
+.table {
+	margin-top: 30px;
+}
+
 .intro-2 h3 {
 	margin-top: 80px;
 	margin-bottom: 50px;
@@ -147,11 +155,10 @@ nav.navbar {
 	font-size: 2em;
 }
 
-#start{
-	display: block;
-	height: 250px;
-	margin-top: -250px;
-	visibility: hidden;
+div #start{
+	height: 200px;
+	margin-top: -200px;
+	visibility: hidden
 }
 
 .button-start {
@@ -175,15 +182,23 @@ nav.navbar {
 	background-color: #6EE5A1;
 }
 
+/* ---------- ALL ---------- */
+
 /* CONTACT FORM */
 
-#contact {
+div #contact{
+	height: 100px;
+	margin-top: -100px;
+	visibility: hidden
+}
+
+.contact {
 	background-color: #5C339E;
 	color: #fff;
 	font-weight: 800;
 }
 
-#contact p {
+.contact p {
 	margin: 45px 0;
 	font-size: 1.5em;
 }
@@ -239,25 +254,65 @@ footer {
 }
 
 .logo-footer {
-	width: 45%;
+	width: 70%;
 	height: auto;
-	display: block;
 	margin: auto;
 }
 
+footer ul {
+	text-align: center;
+	padding-left: 0;
+}
+
+footer ul li {
+	display: inline-block;
+}
+
+footer ul li a:hover {
+	color: #88F2B8;
+}
+
+footer ul li a,
+footer ul li a:active {
+	color: #fff;
+}
+
+.footer-fa {
+	font-size: 1.8em;
+	margin: 10px 7px;
+}
+
+footer p {
+	font-size: 1.6em;
+}
+
 @media (min-width: 500px) {
+
+	/* ---------- ALL ---------- */
+
+	/* NAVBAR */
 
 	.ss-logo1 {
 		width: 10%;
 	}
 
 	.logo-footer {
-		width: 30%;
+		width: 50%;
+	}
+
+	/* FOOTER */
+
+	.footer-fa {
+		font-size: 2em;
 	}
 
 }
 
 @media (min-width: 768px) {
+
+	/* ---------- ALL ---------- */
+
+	/* NAVBAR */
 
 	.navbar-default .navbar-nav>.active>a, 
 	.navbar-default .navbar-nav>.active>a:hover, 
@@ -274,6 +329,10 @@ footer {
 		margin-top: 30px;
 		height: auto;
 	}
+
+	/* ---------- HOME ---------- */
+
+	/* SLIDER */
 
 	.title {
 		top: 35vh;
@@ -292,6 +351,8 @@ footer {
 		float: right;
 	}
 
+	/* MAIN */
+
 	.intro-1col {
 		padding: 20px 90px;
 	}
@@ -304,8 +365,21 @@ footer {
 		font-size: 1.5em;
 	}
 
+	/* ---------- ALL ---------- */
+
+	/* FOOTER */
+
 	.logo-footer {
 		width: 40%;
+	}
+
+	.footer-fa {
+		margin: 5px 8px;
+		font-size: 2em;
+	}
+
+	footer p {
+		font-size: 1.5em;
 	}
 
 }

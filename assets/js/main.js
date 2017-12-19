@@ -33,4 +33,5 @@ $(document).ready(function(){
    		pause: null
   	});
 
+  	$('html').smoothScroll(300);
 });
