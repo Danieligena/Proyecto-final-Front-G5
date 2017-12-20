@@ -24,6 +24,9 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<!-- FontAwesome -->
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<!-- Slick CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
 	<!-- My Style -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<!-- Bootstrap JS -->
@@ -33,7 +36,7 @@
 </head>
 <body>
 	<!-- NAVBAR -->
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<nav class="navbar navbar-default navbar-fixed-top all-nav">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display--> 
 		    <div class="navbar-header col-sm-3">
@@ -54,17 +57,61 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav navbar-right">
-		        <li class="active"><a href="index.html">Inicio</a></li>
+		        <li><a href="index.html">Inicio</a></li>
 		        <li><a href="us.html">Nosotros y El Proyecto</a></li>
-		        <li><a href="start.html">Empieza a Serigrafiar</a></li>
+		        <li class="active"><a href="start.html">Empieza a Serigrafiar</a></li>
 		        <li><a href="#contact">Contacto</a></li>
 		      </ul>
 		    </div>
 		</div>
 	</nav>
-
-	<!-- CONTENT -->
-
+	<!-- END NAV -->
+	<!-- START SIDEBAR -->
+	<div class="sidebar">
+		<ul>
+			<li><a href="#fotolito">1. Fotolito</a></li>
+			<li><a href="#bastidor">2. Bastidor</a></li>
+			<li><a href="#revelado">3. Revelado</a></li>
+			<li><a href="#impresion">4. Impresión</a></li>
+		</ul>
+	</div>
+	<button class="sidebar-btn">
+		<i class="fa fa-plus plus" aria-hidden="true"></i>
+		<span> PASOS</span>
+	</button>
+	<!-- END START SIDEBAR -->
+	<!-- HEADER -->
+	<div class="container-fluid start-intro">
+		<div class="row">
+			<div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
+				<h2>¡EMPECEMOS!</h2>
+				<h4>El manual está dividido en 4 partes donde enlistaremos los materiales necesarios y el proceso para llevar a cabo cada una de ellas.</h4>
+			</div>
+		</div>
+	</div>
+	<!-- END HEADER -->
+	<!-- MAIN -->
+	<main>
+		<div id="fotolito"></div>
+		<div class="container-fluid fotolito">
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h1>hola1</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h1>hola2</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h1>hola3</h1>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- END MAIN -->
 	<!-- CONTACT -->
 	<div class="container-fluid contact">
 		<div id="contact"></div>
@@ -123,5 +170,7 @@
 
 	<!-- Smooth Scroll JQuery Plugin -->
 	<script type="text/javascript" src="assets/js/jquery.smoothscroll.min.js"></script>
+	<!-- Slicj JQuery Plugin -->
+	<script type="text/javascript" src="assets/slick/slick.min.js"></script>
 </body>
 </html>
