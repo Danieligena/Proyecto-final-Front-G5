@@ -10,8 +10,6 @@ $(document).ready(function(){
 	var mediaquery = window.matchMedia("(max-width: 768px)");
 	var logo2 = document.querySelector('.ss-logo2');
 
-	/* transformar totalmente a vanilla js */
-
 	$(function() {
 	    if($(window).width() <= 768){
 	        logo2.classList.add("hidden");
@@ -38,11 +36,18 @@ $(document).ready(function(){
    		pause: null
   	});
 
-  	// SIDEBAR - start
+  	// SIDEBAR - start - vanilla JS
 
-  	$('.sidebar-btn').click(function(){
+  	/*$('.sidebar-btn').click(function(){
   		$('.sidebar').toggleClass('sidebar-active');
   		$(this).children().first().toggleClass('toggle');
+  	})*/
+
+  	var sidebarBtn = document.querySelector('.sidebar-btn');
+  	var sidebar = document.querySelector('.sidebar');
+  	sidebarBtn.addEventListener('click', function(){
+  		sidebar.classList.toggle('sidebar-active');
+  		this.children[0].classList.toggle('toggle');
   	})
 
 	// JQUERY PLUGIN - llamado a smoothScroll
@@ -51,35 +56,37 @@ $(document).ready(function(){
 
   	// JQUERY PLUGIN - llamado a slick
 
-  	$('.fotolito').slick({
+  	var slickParams = 
+  	{
 		dots: false,
 		infinite: false,
 		speed: 300,
-		slidesToShow: 1,
-		slidesToScroll: 1,
+		adaptiveHeight: true,
 		responsive: [
+			{
+				breakpoint: 1800,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+				}
+			},
 			{
 				breakpoint: 1024,
 				settings: {
-					slidesToShow: 1,
+					slidesToShow: 2,
 					slidesToScroll: 1,
-					infinite: true,
 				}
 			},
 			{
-				breakpoint: 600,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1
-				}
-			},
-			{
-				breakpoint: 480,
+				breakpoint: 900,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1
 				}
 			}
 		]
-	});
+	}
+
+  	$('.photolith').slick(slickParams);
+  	$('.frame').slick(slickParams);
 });
