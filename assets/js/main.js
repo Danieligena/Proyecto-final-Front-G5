@@ -36,21 +36,7 @@ $(document).ready(function(){
    		pause: null
   	});
 
-  	// SIDEBAR - start - vanilla JS
-
-  	/*$('.sidebar-btn').click(function(){
-  		$('.sidebar').toggleClass('sidebar-active');
-  		$(this).children().first().toggleClass('toggle');
-  	})*/
-
-  	var sidebarBtn = document.querySelector('.sidebar-btn');
-  	var sidebar = document.querySelector('.sidebar');
-  	sidebarBtn.addEventListener('click', function(){
-  		sidebar.classList.toggle('sidebar-active');
-  		this.children[0].classList.toggle('toggle');
-  	})
-
-	// JQUERY PLUGIN - llamado a smoothScroll
+  	// JQUERY PLUGIN - llamado a smoothScroll
 
   	$('html').smoothScroll(300);
 
@@ -61,6 +47,7 @@ $(document).ready(function(){
 		dots: false,
 		infinite: false,
 		speed: 300,
+		dots: true,
 		adaptiveHeight: true,
 		responsive: [
 			{
@@ -74,7 +61,7 @@ $(document).ready(function(){
 				breakpoint: 1024,
 				settings: {
 					slidesToShow: 2,
-					slidesToScroll: 1,
+					slidesToScroll: 2,
 				}
 			},
 			{
@@ -89,4 +76,15 @@ $(document).ready(function(){
 
   	$('.photolith').slick(slickParams);
   	$('.frame').slick(slickParams);
+  	$('.developing').slick(slickParams);
+  	$('.print').slick(slickParams);
+
+  	// SIDEBAR - start - vanilla JS
+
+  	var sidebarBtn = document.querySelector('.sidebar-btn');
+  	var sidebar = document.querySelector('.sidebar');
+  	sidebarBtn.addEventListener('click', function(){
+  		sidebar.classList.toggle('sidebar-active');
+  		this.children[0].classList.toggle('toggle');
+  	})
 });
