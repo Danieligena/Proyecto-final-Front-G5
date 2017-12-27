@@ -1,8 +1,13 @@
 # Proyecto Final - Front G5 - Desafío Latam
 # Colectivo SinSerif
+
+Dentro del repositorio se encuentran la base de datos y la carpeta wp-content para utilizarlos con Wordpress.
+De cualquier forma, se puede ingresar como editor con los siguientes datos:
 * [Dirección](http://186.64.118.50/~feg5daniela/)
-* wp-login > usuario: Desafiolatam
-* wp-login > pass: desafio_latam
+* wp-login.php > usuario: Desafiolatam
+* wp-login.php > pass: desafio_latam
+
+### Idea
 
 El Colectivo nace para crear, entre otras cosas, una serie de manuales que entreguen información básica accesible; en cuanto a desarrollo y costos de diferentes oficios, tales como la Serigrafía o el Linograbado.
 
