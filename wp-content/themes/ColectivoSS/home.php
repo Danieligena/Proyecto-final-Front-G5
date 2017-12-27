@@ -111,7 +111,7 @@
 								</strong>
 							</p>
 							<button class="btn button-start">
-								<a href="http://localhost:8888/start/">
+								<a href="http://186.64.118.50/~feg5daniela/start/">
 									¡A EMPEZAR!
 								</a>
 							</button>

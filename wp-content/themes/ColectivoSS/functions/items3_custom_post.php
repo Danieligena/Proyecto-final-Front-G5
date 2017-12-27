@@ -39,7 +39,7 @@
 				'description'           => __( 'Items Developing', 'text_domain' ),
 				'labels'                => $labels,
 				'supports'              => array( 'title', 'thumbnail' ),
-				'taxonomies'            => null,
+				'taxonomies'            => array( 'category', 'post_tag' ),
 				'hierarchical'          => false,
 				'public'                => true,
 				'show_ui'               => true,

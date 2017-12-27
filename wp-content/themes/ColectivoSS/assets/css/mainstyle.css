@@ -280,14 +280,7 @@ div#results {
 .slick-prev:before,
 .slick-next:before {
 	color: #25D88B;
-	font-size: 3rem;
-}
-
-.slick-prev {
-	left: 8px;
-}
-.slick-next {
-	right: 10px;
+	font-size: 3.5rem;
 }
 
 ul.slick-dots {

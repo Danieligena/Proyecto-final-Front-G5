@@ -21,7 +21,7 @@
 					<span class="icon-bar"></span>
 				</button>
 				<h1>
-					<a href="#">
+					<a href="http://186.64.118.50/~feg5daniela/">
 						<img class="img-responsive ss-logo1" src="<?php bloginfo('template_url'); ?>/assets/img/ss-logo.svg" alt="Logo Reducido Colectivo Sin Serif">
 						<img class="img-responsive ss-logo2 hidden" src="<?php bloginfo('template_url'); ?>/assets/img/sinserif-logo.svg" alt="Logo Colectivo Sin Serif">
 					</a>

@@ -39,7 +39,7 @@
 				'description'           => __( 'recommendations', 'text_domain' ),
 				'labels'                => $labels,
 				'supports'              => array( 'title' ),
-				'taxonomies'            => null,
+				'taxonomies'            => array( 'category', 'post_tag' ),
 				'hierarchical'          => false,
 				'public'                => true,
 				'show_ui'               => true,
