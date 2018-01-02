@@ -2,10 +2,7 @@
 # Colectivo SinSerif
 
 Dentro del repositorio se encuentran la base de datos y la carpeta wp-content para utilizarlos con Wordpress.
-De cualquier forma, se puede ingresar como editor con los siguientes datos:
-* [Dirección](http://186.64.118.50/~feg5daniela/)
-* wp-login.php > usuario: Desafiolatam
-* wp-login.php > pass: desafio_latam
+Se puede acceder a la página desde la siguiente [Dirección](http://186.64.118.50/~feg5daniela/)
 
 ### Idea
 
