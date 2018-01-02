@@ -271,10 +271,19 @@ div#frame,
 div#developing,
 div#print,
 div#where,
-div#results {
+div#results,
+div#contact {
 	height: 200px;
 	margin-top: -200px;
 	visibility: hidden;
+}
+
+.slick-dots li button:before {
+	font-size: 10px;
+}
+
+.slick-prev {
+	z-index: 9999;
 }
 
 .slick-prev:before,
@@ -386,8 +395,9 @@ ul.slick-dots {
 	color: #210E4C;
 }
 
-.results img {
+.results-img img {
 	padding-bottom: 60px;
+	margin: auto;
 }
 
 /* ---------- 404 ---------- */
@@ -407,12 +417,6 @@ ul.slick-dots {
 
 /* CONTACT FORM */
 
-div#contact{
-	height: 100px;
-	margin-top: -100px;
-	visibility: hidden
-}
-
 .contact {
 	background-color: #5C339E;
 	color: #fff;
@@ -428,37 +432,47 @@ div#contact{
 	text-align: left;
 }
 
-.contact-form label {
+.contact-form label.contact_label {
 	text-align: left;
 	font-weight: 500;
 	margin: 10px 0;
+	font-size: 1.7rem;
+	margin: -15px 0;
 }
 
-.contact-form textarea {
-	min-height: 150px;
-	overflow-y: auto;
-	overflow-x: hidden;
-}
-
-.contact-form input, 
-.contact-form textarea {
+.contact-form .contact_label input,
+.contact-form .contact_label textarea {
+	border: none;
+	margin-top: 8px;
+	padding: 5px 12px;
+	border-radius: 8px;
 	background-color: #EFEFEF;
 	color: #210E4C;
 	font-weight: 500;
 }
 
-.contact-form button,
-.contact-form button:visited {
+.contact-form .contact_label textarea {
+	max-height: 200px;
+}
+
+.contact-form:last-child {
+	text-align: center;
+}
+
+.contact-form .contact_button,
+.contact-form .contact_button:visited {
+	border: none;
 	background-color: #FFD524;
 	color: #210E4C;
 	font-weight: 800;
-	padding: 10px 30px;
+	padding: 10px 25px;
 	border-radius: 20px;
-	margin: 35px auto;
+	margin: -15px 0;
 	box-shadow: 0px 3px 21px -2px rgba(0,0,0,0.5);
+	font-size: 1.8rem;
 }
 
-.contact-form button:hover {
+.contact-form .contact_button:hover {
 	color: #210E4C;
 	background-color: #FFBC27;
 }

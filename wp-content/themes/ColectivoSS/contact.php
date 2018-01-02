@@ -8,13 +8,14 @@
 				</p>
 				<form>
 					<div class="col-xs-12 col-sm-6 col-sm-offset-3 form-group contact-form">
-						<label>Nombre y Apellido</label>
+						<?php echo do_shortcode('[contact-form-7 id="114" title="Formulario de contacto 1"]'); ?>
+						<!-- <label>Nombre y Apellido</label>
 						<input type="text" class="form-control" required>
 						<label>Email</label>
 						<input type="text" class="form-control" required>
 						<label>Mensaje</label>
 						<textarea class="form-control"></textarea>
-						<button type="submit" class="btn center-block">ENVIAR</button>
+						<button type="submit" class="btn center-block">ENVIAR</button> -->
 					</div>
 				</form>
 			</div>

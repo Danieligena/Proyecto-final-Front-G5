@@ -44,7 +44,6 @@ $(document).ready(function(){
 
   	var slickParams = 
   	{
-		dots: false,
 		infinite: false,
 		speed: 300,
 		dots: true,
@@ -79,6 +78,11 @@ $(document).ready(function(){
   	$('.developing').slick(slickParams);
   	$('.print').slick(slickParams);
 
+  	$('.results-img').slick({
+		dots: true,
+		infinite: true
+	});
+
   	// SIDEBAR - start - vanilla JS
 
   	var sidebarBtn = document.querySelector('.sidebar-btn');
@@ -87,13 +91,5 @@ $(document).ready(function(){
   		sidebar.classList.toggle('sidebar-active');
   		this.children[0].classList.toggle('toggle');
   	})
-
-  	// FLEXSLIDER - start
-
-  	$(window).on('load', function() {
-	  $('.flexslider').flexslider({
-	    animation: "slide"
-	  });
-	});
 
 });

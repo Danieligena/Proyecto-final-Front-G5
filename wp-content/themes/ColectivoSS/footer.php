@@ -18,7 +18,6 @@
 	<!-- GOOGLE MAPS -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsO2qJ9mNbwzKXy2m6BQ8ogIkuYLgZZoU&callback=initMap" async defer></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/assets/js/api.js"></script>
-	<!-- Google Analytics -->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111378506-1"></script>
 	<script>

@@ -529,41 +529,32 @@
 		</div>
 		<div id="results"></div>
 		<div class="container-fluid results">
-			<div class="row">
-				<div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
-					<div class="flexslider">
-						<ul class="slides">
-
-							<?php
-								$arg = array(
-									'post_type'		 => 'results',
-									'posts_per_page' => 11
-								);
-							
-								$get_arg = new WP_Query( $arg );
-							
-								while ( $get_arg->have_posts() ) {
-									$get_arg->the_post();
-								?>
-									
-									<li>
-										<?php the_post_thumbnail(results); ?>
-									</li>
-							
-								<?php } wp_reset_postdata();
-							?>
-
-						</ul>
-					</div>
-				</div>
+			<div class="row results-img">
+				
+					<?php
+						$arg = array(
+							'post_type'		 => 'results',
+							'posts_per_page' => 12
+						);
+					
+						$get_arg = new WP_Query( $arg );
+					
+						while ( $get_arg->have_posts() ) {
+							$get_arg->the_post();
+						?>
+							<div class="col-xs-12 col-md-8 results-img-item">
+								<img class="img-responsive" src="<?php the_post_thumbnail_url('results'); ?>"/>
+							</div>
+					
+						<?php } wp_reset_postdata();
+					?>
 			</div>
-		</div>
+		</div>	
 		<!-- END RESULTS -->
 	</main>
 	<!-- END MAIN -->
 	<!-- CONTACT -->
 	<?php get_template_part('contact') ?>
-	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/assets/js/lib/jquery.flexslider.js"></script>
 </body>
 
 <?php get_footer(); ?>

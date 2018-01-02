@@ -8,7 +8,6 @@
 		wp_register_style('fontAwesome', get_parent_theme_file_uri('/assets/css/font-awesome.min.css'), null, null, 'screen');
 		wp_register_style('slick', get_parent_theme_file_uri('/assets/slick/slick.css'), null, null, 'screen');
 		wp_register_style('slick-theme', get_parent_theme_file_uri('/assets/slick/slick-theme.css'), null, null, 'screen');
-		wp_register_style('flexslider', get_parent_theme_file_uri('/assets/css/flexslider.css'), null, null, 'screen');
 		wp_register_style('myStyle', get_parent_theme_file_uri('/assets/css/mainstyle.css'), null, null, 'screen');
 		
 		/* Enqueue Scripts */
@@ -18,7 +17,6 @@
 		if (is_page('start')) {
 			wp_enqueue_style('slick');
 			wp_enqueue_style('slick-theme');
-			wp_enqueue_style('flexslider');
 		}
 		wp_enqueue_style('myStyle');
 	}
